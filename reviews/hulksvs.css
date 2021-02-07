@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');/*font-family: 'Shojumaru', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap'); /*font-family: 'EB Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap'); /*font-family: 'Vidaloka', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&family=Work+Sans&display=swap'); /*font-family: 'Work Sans', sans-serif;*//*font-family: 'Mallanna', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap'); /*font-family: 'Texturina', serif;*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+body {
+	height:1600vh; /*？？？為何小於1600vh底部就會有空隙？？？*/
+	width: 100%;
+	background-color: hsl(0, 0%, 18%);/*#5d84b0*//*#d9d6b2*//*#111112*/
+
+}
+
+/*body::-webkit-scrollbar {
+    display: none;
+}*/
+
+header {
+	height:101vh;
+}
+
+
+/*左上角圖外面的a*/
+header > a:nth-of-type(1) {
+	position: fixed;
+	top: 0;
+	left:0;
+	padding:1vh;
+	display: inline-block; 
+	height: 11vh;
+	width:11vh;
+	background-color:hsl(0, 0%, 15%); 
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 101;
+}
+
+
+/*左上角圖*/
+header > a:nth-of-type(1) > img {
+	display: inline-block;
+	position: relative;
+	top:0.5vh;
+	left:0.5vh;
+	width:50px;
+	height:50px;
+	transition: background-color .4s ease-in-out;
+	z-index: 100;
+}
+
+header > a:nth-of-type(1):hover {
+	background-color: hsl(0, 0%, 20%);
+
+}
+
+
+header > nav {
+	height: 11vh;
+    line-height: 11vh;
+	width:100vw;
+	display: block;
+	display: flex;
+	justify-content: flex-end;
+	background-color: hsl(0, 0%, 15%);
+	position: fixed;
+	top: 0px;
+    z-index: 100;
+    
+}
+
+
+header > nav a{
+	display: inline-block;
+	height: 11vh;
+	font-size: 3vh;
+	font-family: 'Changa', sans-serif;
+	background-color: hsl(0, 0%, 15%); 
+	padding: 0 70px;
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 100;
+}
+
+header > nav a:hover {
+	background-color: gray;
+
+}
+
+/*MOVIE*/
+header > span:nth-of-type(1) {
+	display: inline-block;
+	position: relative;
+	top:0vh;
+	left:21.2vw;
+	font-size:1.5vw;
+	font-family: 'Changa', sans-serif;
+	color:hsl(210, 100%, 80%);
+
+}
+
+/*Why Hulk (2003) is better than The Incredible Hulk (2008)?*/
+header > span:nth-of-type(2) {
+	display: inline-block;
+	position: relative;	
+	top:22vh;
+	left:16.5vw;
+	font-size:4vw;
+	font-family: 'Vidaloka', serif;
+	width:62vw;
+	color:hsl(0, 0%, 100%);
+
+}
+
+/*Name*/
+header > span:nth-of-type(3) {
+	display: inline-block;
+	position: relative;	
+	top:30vh;
+	left:-45.5vw;
+	font-size:1.4vw;
+	font-family: 'Work Sans', sans-serif;
+	color:hsl(0, 0%, 80%);
+}
+
+/*Date*/
+header > span:nth-of-type(4) {
+	display: inline-block;
+	position: relative;	
+	top:30vh;
+	left:-44vw;
+	font-size: 1.4vw;
+	font-family: 'EB Garamond', serif;
+	color:hsl(0, 0%, 55%);
+}
+
+/*img hulkvs*/
+body > img:nth-of-type(1) {
+	display: block;
+	position: relative;
+	top:-45vh;
+	left:21.5vw;
+	height:65vh;
+	width:58vw;
+}
+
+/*1st pic note*/
+body > span:nth-of-type(1) {
+	display:inline-block;
+	position:relative;
+	top:-1377vh;
+	left:22vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+
+
+article {
+	display: inline-block;
+	top: -40vh;
+	left:1.5vw;
+	position: relative;
+	width:60vw;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    color: white;
+    height: 1380vh;
+    
+}
+
+article  section {
+	font-size:1.5vw;
+	font-family: 'EB Garamond', serif;
+	line-height:5vh;
+}
+
+article > section:nth-of-type(1) > p:nth-of-type(1) {
+	position: relative;
+	top:6vh;
+}
+
+
+article > section:nth-of-type(1) > p:nth-of-type(2) {
+	display: inline-block;
+	position: relative;
+	top: 2.5vh;
+	left: 1vw;
+	width:57vw;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.1vw;
+	font-style: italic;
+}
+
+/*Character depth — the background story of Hulk*/
+article > section:nth-of-type(2) > h2 {
+	color: hsl(120, 59%, 55%);
+}
+
+/*img injection2003*/
+article > section:nth-of-type(2) > img:nth-of-type(1) {
+	display: block;
+	position: relative;
+	top:5vh;
+	left:7vw;
+	width:45vw;
+	height:50vh;
+	
+
+}
+
+/*img stare2003*/
+article > section:nth-of-type(2) > img:nth-of-type(2) {
+	display: block;
+	position: relative;
+	top:16vh;
+	left:7vw;
+	width:45vw;
+	height:60vh;
+	
+
+}
+
+/*2nd pic note*/
+article > section:nth-of-type(2) > span:nth-of-type(1) {
+	display:inline-block;
+	position:relative;
+	top:7vh;
+	left:7vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+/*3rd pic note*/
+article > section:nth-of-type(2) > span:nth-of-type(2) {
+	display:inline-block;
+	position:relative;
+	top:18vh;
+	left:7vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+
+
+article > section:nth-of-type(2) > p:nth-of-type(2) {
+	position: relative;
+	top:30vh;
+
+}
+
+
+
+/*img breath2008*/
+article > section:nth-of-type(2) > img {
+	display: block;
+	position: relative;
+	top:35vh;
+	left:1vw;
+	width:40vw;
+	height:38vh;
+}
+
+/*img roar2008*/
+article > section:nth-of-type(2) > img:nth-of-type(4) {
+	display: block;
+	position: relative;
+	top:35vh;
+	left:1vw;
+	width:40vw;
+	height:38vh;
+}
+
+/*4th pic note*/
+article > section:nth-of-type(2) > span:nth-of-type(3) {
+	display:inline-block;
+	position:relative;
+	top:-12vh;
+	left:43vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+/*Character depth — better interaction between Bruce and his girlfriend Betty*/
+article > section:nth-of-type(3) > h2 {
+	position: relative;
+	top:20vh;
+	color: hsl(120, 59%, 55%);
+
+}
+
+
+article > section:nth-of-type(3) > p:nth-of-type(1) {
+	position: relative;
+	top:25vh;
+
+}
+
+/*img BBtalk*/
+article > section:nth-of-type(3) > img:nth-of-type(1) {
+	display: block;
+	position: relative;
+	top:30vh;
+	left:4.5vw;
+	width:28vw;
+	height: 62vh;
+
+}
+
+/*5th pic note*/
+article > section:nth-of-type(3) > span:nth-of-type(1) {
+	display:inline-block;
+	position:relative;
+	top:-10vh;
+	left:33.5vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+article > section:nth-of-type(3) > p:nth-of-type(2) {
+	position: relative;
+	top:15vh;
+
+}
+
+/*img Bettybillow*/
+article > section:nth-of-type(3) > img:nth-of-type(2) {
+	display: block;
+	position: relative;
+	top:16vh;
+	left:11vw;
+	width:15vw;
+	height: 20vh;
+
+}
+/*img BBhug*/
+article > section:nth-of-type(3) > img:nth-of-type(3) {
+	display: block;
+	position: relative;
+	top:-5vh;
+	left:27vw;
+	width:25vw;
+	height: 50vh;
+
+}
+
+/*6、7th pic note*/
+article > section:nth-of-type(3) > span:nth-of-type(2) {
+	display:inline-block;
+	position:relative;
+	top:-28vh;
+	left:7vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+	text-align:right;
+	
+}
+
+article > section:nth-of-type(3) > p:nth-of-type(3) {
+	position: relative;
+	top:-11vh;
+
+}
+
+/*img Betty&Bruce2008*/
+article > section:nth-of-type(3) > img:nth-of-type(4) {
+	display: block;
+	position: relative;
+	top:-8vh;
+	left:5vw;
+	width:50vw;
+	height: 49vh;
+
+}
+
+/*8th pic note*/
+article > section:nth-of-type(3) > span:nth-of-type(3) {
+	display:inline-block;
+	position:relative;
+	top:-7vh;
+	left:5.5vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+
+/*Action scenes — based on character depth*/
+article > section:nth-of-type(4) > h2 {
+	position: relative;
+	top:-2vh;
+	color: hsl(120, 59%, 55%);
+
+}
+	/*Last but not least...*/
+article > section:nth-of-type(4) > p:nth-of-type(1) {
+	position: relative;
+	top:2vh;
+
+}
+
+/*The First Action Scene*/
+article > section:nth-of-type(4) > h3:nth-of-type(1) {
+	position: relative;
+	top:0;
+	color: hsl(120, 59%, 65%);
+
+}
+     /*For Hulk (2003)...*/
+article > section:nth-of-type(4) > p:nth-of-type(2) {
+	position: relative;
+	top:3vh;
+
+}
+
+/*The Final Action Scene*/
+article > section:nth-of-type(4) > h3:nth-of-type(2) {
+	position: relative;
+	top:2.5vh;
+	color: hsl(120, 59%, 65%);
+}
+
+     /*Likewise, the final battle scene...*/
+article > section:nth-of-type(4) > p:nth-of-type(3) {
+	position: relative;
+	top:5vh;
+
+}
+
+/*img fatherson2003*/
+article > section:nth-of-type(4) > img:nth-of-type(1) {
+	display: block;
+	position: relative;
+	top:4vh;
+	left:11vw;
+	width:38vw;
+	height: 49vh;
+
+}
+
+/*9th pic note*/
+article > section:nth-of-type(4) > span:nth-of-type(1) {
+	display:inline-block;
+	position:relative;
+	top:5vh;
+	left:11vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+
+     /*By contrast, The Incredible Hulk...*/
+article > section:nth-of-type(4) > p:nth-of-type(4) {
+	position: relative;
+	top:10vh;
+
+}
+
+
+
+/*img hulk_vs_abomination*/
+article > section:nth-of-type(4) > img:nth-of-type(2) {
+	display: block;
+	position: relative;
+	top:15vh;
+	left:6vw;
+	width:48vw;
+	height: 49vh;
+
+}
+
+/*10th pic note*/
+article > section:nth-of-type(4) > span:nth-of-type(2) {
+	display:inline-block;
+	position:relative;
+	top:16vh;
+	left:6.5vw;
+	font-size:1.2vw;
+	font-family: 'Texturina', serif;
+	color: hsl(120, 59%, 60%);
+}
+
+
+
+     /*To sum up...*/
+article > section:nth-of-type(4) > p:nth-of-type(5) {
+	position: relative;
+	top:20vh;
+
+}
+
+footer {
+	display: block;
+	position: relative;
+	top: -30vh;
+	left:22vw;
+	width: 58.5vw;
+	height: 25vh;
+	border-radius:5%;
+	background-color: hsl(45, 100%, 65%);
+
+}
+
+
+footer > article {
+	display: block;
+	position:relative;
+	top:-20vh;
+	left:-0.05vw;
+	width: 60vw;
+	height: 25vh;
+}
+
+
+/*img mekeyhole*/
+footer > a:nth-of-type(1) > img {
+	display: inline-block;
+	position: relative;
+    top:0;
+    left: 0vw;
+	width:140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+/*hover img mekeyhole*/
+footer > a:nth-of-type(1):hover > img {
+	opacity: 90%;
+	transform: scale(1.01);
+	transition: all .4s ease-in-out;
+}
+
+footer > a:nth-of-type(1) {
+	display: inline-block;
+	position: relative;
+    top:2.5vh;
+    left: 2.5vw;
+	width:140px;
+	height: 140px;
+	border-radius: 50%;
+	z-index: 10;
+	
+}
+
+/*Alan Pai*/
+footer > article > a:nth-of-type(1) {
+   display:inline;
+   position:relative;
+   top:-2vh;
+   left:14vw;
+   text-decoration:none;
+   font-size:1.8vw;
+   font-family: 'Work Sans', sans-serif;
+   font-weight: bold;
+   color: hsl(300, 100%, 15%);
+}
+
+footer > article > a:nth-of-type(1):hover {
+	opacity: 80%;
+	transition: all .4s ease-in-out;
+}
+
+
+
+/*intro*/
+footer > article > p:nth-of-type(1) {
+    display: inline-block;
+    width:41vw;
+    line-height:3.5vh;
+	position:relative;
+	top:9.5vh;
+	left:6.5vw;
+	color: hsl(60, 20%, 30%);
+	font-size: 1.2vw;
+	font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    text-justify:inter-ideograph;
+}
+
+
+
+span.totop  {
+	display: inline-block;
+	position: relative;
+	top: -92vh;
+	left: 89.3vw;
+	font-size:2.5vw;
+	font-family: 'Changa', sans-serif;
+	color: hsl(45, 100%, 65%);
+	font-weight: bold;
+}
+
+a.totopp {
+	display:inline-block;
+	position:relative;
+	top:-98vh;
+	left: 82vw;
+}
+
+a.totopp > img {
+	width: 150px;
+	height: 150px;
+}
+
+a.totopp:hover > img {
+	transform: scale(1.1);
+	transition: all .3s ease-in-out;
+	opacity: 95%;
+}

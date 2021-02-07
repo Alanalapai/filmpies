@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');/*font-family: 'Shojumaru', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap'); /*font-family: 'EB Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap'); /*font-family: 'Vidaloka', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&family=Work+Sans&display=swap'); /*font-family: 'Work Sans', sans-serif;*//*font-family: 'Mallanna', sans-serif;*/
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+body {
+	height:100vh;
+	width: 100%;
+	background-color: hsl(0, 0%, 18%);/*#5d84b0*//*#d9d6b2*//*#111112*/
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+	height:100vh;
+}
+
+
+/*左上角圖外面的a*/
+header > a:nth-of-type(1) {
+	position: fixed;
+	top: 0;
+	left:0;
+	padding:1vh;
+	display: inline-block; 
+	height: 11vh;
+	width:11vh;
+	background-color:hsl(0, 0%, 15%); 
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 101;
+}
+
+
+/*左上角圖*/
+header > a:nth-of-type(1) > img {
+	display: inline-block;
+	position: relative;
+	top:0.5vh;
+	left:0.5vh;
+	width:50px;
+	height:50px;
+	transition: background-color .4s ease-in-out;
+	z-index: 100;
+}
+
+header > a:nth-of-type(1):hover {
+	background-color: hsl(0, 0%, 20%);
+
+}
+
+
+header > nav {
+	height: 11vh;
+    line-height: 11vh;
+	width:100vw;
+	display: block;
+	display: flex;
+	justify-content: flex-end;
+	background-color: hsl(0, 0%, 15%);
+	position: fixed;
+	top: 0px;
+    z-index: 100;
+    
+}
+
+
+header > nav a{
+	display: inline-block;
+	height: 11vh;
+	font-size: 3vh;
+	font-family: 'Changa', sans-serif;
+	background-color: hsl(0, 0%, 15%); 
+	padding: 0 70px;
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 100;
+}
+
+header > nav a:hover {
+	background-color: gray;
+
+}
+
+header > div:nth-of-type(1) {
+	position: relative;
+	top: 20vh;
+	left:13vw;
+	width:75vw;
+	height:60vh;
+	background-color: hsl(0, 0%, 30%);
+	border-radius:2%;
+	z-index:100;
+}
+
+
+/*兩個Hulk的圖*/
+header > div:nth-of-type(1) > a > img {
+	display: inline-block;
+	width:40vw;
+	height: 50vh;
+	position: relative;
+	top:5vh;
+	left:2vw;
+	z-index:100;
+	transition: all .4s ease-in-out;
+}
+
+header > div:nth-of-type(1) > a > img:hover {
+	opacity: 95%;
+	transition: all .4s ease-in-out;
+	transform: scale(1.01); 
+}
+
+
+header > div:nth-of-type(1) > article {
+    display:inline-block;
+    position:relative;
+    top:-0.5vh;
+    left:5vw;
+    font-size:1.5vw;
+    font-family: 'Vidaloka', serif;
+    width:26vw;
+    text-align: justify;
+    text-justify:inter-ideograph
+}
+
+header > div:nth-of-type(1) > article > a {
+	text-decoration: none;
+	color:hsl(0, 0%, 100%);
+}
+
+header > div:nth-of-type(1) > article > a:hover {
+	color:hsl(0, 0%, 85%);
+}
+
+/*Alan Pai*/
+header > div:nth-of-type(1) > article > span:nth-of-type(1) {
+	position:relative;
+	top:-6.5vh;
+	font-size:1.4vw;
+	font-family: 'Work Sans', sans-serif;
+	color:hsl(0, 0%, 90%);
+
+}
+
+/*Date*/
+header > div:nth-of-type(1) > article > span:nth-of-type(2) {
+	position:relative;
+	top:-6.5vh;
+	left: 0.7vw;
+	font-size:1vw;
+	font-family: 'EB Garamond', serif;
+	color:hsl(0, 0%, 75%);
+}
+
+/*Small intro*/
+header > div:nth-of-type(1) > article > section > p:nth-of-type(1) {
+	font-size:1.4vw;
+	font-family: 'EB Garamond', serif;
+	color:hsl(0, 0%, 90%);
+}
