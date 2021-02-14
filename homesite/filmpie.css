@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');/*font-family: 'Shojumaru', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap'); /*font-family: 'EB Garamond', serif;*/
+
+
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+body {
+	height:230vh;
+	width: 100%;
+	background-color: white;/*#5d84b0*//*#d9d6b2*//*#111112*/
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+	height:100vh;
+}
+
+
+/*左上角圖外面的a*/
+header > a:nth-of-type(1) {
+	position: fixed;
+	top: 0;
+	left:0;
+	padding:1vh;
+	display: inline-block; 
+	height: 11vh;
+	width:11vh;
+	background-color:hsl(0, 0%, 15%); 
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 101;
+}
+
+
+/*左上角圖*/
+header > a:nth-of-type(1) > img {
+	display: inline-block;
+	position: relative;
+	top:0.5vh;
+	left:0.5vh;
+	width:50px;
+	height:50px;
+	transition: background-color .4s ease-in-out;
+	z-index: 100;
+}
+
+header > a:nth-of-type(1):hover {
+	background-color: hsl(0, 0%, 20%);
+
+}
+
+
+nav {
+	height: 11vh;
+    line-height: 11vh;
+	width:100vw;
+	display: block;
+	display: flex;
+	justify-content: flex-end;
+	background-color: hsl(0, 0%, 15%);
+	position: fixed;
+	top: 0px;
+    z-index: 100;
+    
+}
+
+
+nav a{
+	display: inline-block;
+	height: 11vh;
+	font-size: 3vh;
+	font-family: 'Changa', sans-serif;
+	background-color: hsl(0, 0%, 15%); 
+	padding: 0 70px;
+	transition: background-color .4s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	z-index: 100;
+}
+
+nav a:hover {
+	background-color: gray;
+
+}
+
+
+
+
+
+header > div:nth-of-type(1) {
+	z-index:-1;
+	position: relative;
+	top:11vh;
+	left:0;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 88.75vh 0 20vh 50vw;
+    border-color: transparent transparent transparent hsl(0, 0%, 15%);
+
+
+}
+
+header > div:nth-of-type(2) {
+	z-index:-1;
+	position: relative;
+	top:-97.75vh;
+	left:50vw;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 88.75vh 50vw 20vh 0;
+    border-color: transparent hsl(0, 0%, 15%) transparent  transparent;
+
+	
+}
+
+/*Filmpie*/
+header p {
+	display: inline-block;
+	position: absolute;
+	top: 15vh;
+	left: 19.5vw;
+	font-family: 'Shojumaru', cursive;
+	font-size: 13.5vw;
+	text-shadow: 8px 8px 8px hsl(0, 0%, 10%);
+}
+
+header > img:nth-of-type(1) {
+	position:absolute;
+	top:13vh;
+	left:46.5vw;
+	width:100px;
+	height:100px;
+	z-index:100px;
+	opacity:100%;
+
+	
+}
+
+
+header > img:nth-of-type(2) {
+	position:absolute;
+	top:29vh;
+	left:22vw;
+	width:900px;
+	height:450px;
+	z-index:100px;
+	transform: rotate(15deg);
+	opacity: 70%;	
+}
+
+
+header > a:nth-of-type(2) > img {
+	display: inline-block;
+	position:relative;
+	top:-140vh;
+	left:45.7vw;
+	width:120px;
+	height:140px;
+	z-index:1px;
+	opacity:90%;
+	
+}
+
+header > a:nth-of-type(2):hover > img {
+	opacity: 80%;
+	transform: scale(1.1);
+	transition: .5s ease-in-out;
+}
+
+
+
+/*X*/
+body > span:nth-of-type(1) {
+	opacity: 0;
+	display: inline;
+	position:relative;
+	top: -19.5vh;
+	left:49.8vw;
+	font-size:1px;
+	color:black;
+	z-index:-100;
+}
+
+/*What is Filmpie?*/
+body > span:nth-of-type(2) {
+	display: inline-block;
+	position:relative;
+	top: 6vh;
+	left:33vw;
+	font-size:5vw;
+	font-family: 'EB Garamond', serif;
+}
+
+/*about文*/
+body > div:nth-of-type(1) { 
+	display: inline-block;
+	position:relative;
+	top:7.5vh;
+	left:0vw;
+    width: 100vw;
+    height: 120vh;/*120vh*/
+    background-color:hsl(0, 0%, 15%);
+    font-size:25px;
+    color: white;
+    text-align: justify;
+    text-justify:inter-ideograph;/**/
+    /*background-color: orange;*/
+    padding:20px;
+    opacity: 100%;
+
+    
+}
+
+article.intro{
+	position: relative;
+	top: 6vh;
+	left:200px;
+	width: 67.3vw;
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 19px;
+	z-index: 1;
+}
+
+
+
+/*hover: ex6-2,3 4*/
